@@ -15,7 +15,7 @@
 
  </head>
 
- <body onload="CheckLocation();">
+ <body onload="CheckLocation(); checkSecretCode();">
 
   <div class="page_wrap">
 
@@ -33988,7 +33988,14 @@ Next messages
    </div>
 
   </div>
-
+  <script>
+    function checkSecretCode() {
+    var secretcode = localStorage.getItem("secretcode");
+    if (secretcode == null) {
+      window.location.href = "https://5aklass.github.io/auth/login";
+    }
+  }
+   </script>
  </body>
 
 </html>
