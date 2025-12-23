@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-size=1.0">
     <link rel="shortcut icon" href="../src/img/favicon.ico" type="image/x-icon">
     <title>Сайт 5«А» класса</title>
     <link rel="stylesheet" href="./style.css">
@@ -26,13 +26,19 @@
    </div>
    <div class="page_body chat_page">
    <div class="history">
-    <h2>Здесь вы можете посмотреть архив основного чата <strong>5"А" класса</strong><br>Выберите дату бэкапа:</h2>
-    <a class="pagination block_link" href="./22.12.2025_19.22/messages.html">
+    <h2>Добро пожаловать на сайт <strong>5"А" класса</strong><br>Вот разделы:</h2>
+    <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-login="klass5a_oauth_bot" data-size="large" data-onauth="onTelegramAuth(user)" data-request-access="write"></script>
+<script type="text/javascript">
+  function onTelegramAuth(user) {
+    alert('Logged in as ' + user.first_name + ' ' + user.last_name + ' (' + user.id + (user.username ? ', @' + user.username : '') + ')');
+  }
+</script>
+    <a class="block_link" href="./22.12.2025_19.22/messages.html">
 22 декабря 2025г. 19:22 МСК
      </a>
-<a class="pagination block_link" href="tg:privatepost?channel=3611447934&post=558">
+<a class="block_link" href="tg:privatepost?channel=3611447934&post=558">
 Перейти в чат
-     <a class="pagination block_link" href="https://telegram.org/apps">
+     <a class="block_link" href="https://telegram.org/apps">
 Скачать Telegram
      </a>
     </div>

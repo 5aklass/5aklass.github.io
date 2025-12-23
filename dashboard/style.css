@@ -1,6 +1,9 @@
+body {
+    font-family: 'Open Sans',"Lucida Grande","Lucida Sans Unicode",Arial,Helvetica,Verdana,sans-serif;
+}
 html {
     background-color: rgb(26, 26, 26);
-    color: rgb(85, 32, 155);
+    color: rgb(32, 126, 155);
 }
 .page_header {
     text-align: center;
