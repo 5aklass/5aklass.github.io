@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+<title>Введите ключ:</title>
+  <meta content="width=device-width" name="viewport">
+
+  <link href="https://5aklass.github.io/src/css/tg2/style.css" rel="stylesheet">
+
+
+
+  </script>
+
+ </head>
+<body>
+
+  <div class="page_wrap">
+
+   <div class="page_header">
+
+
+    <div class="content">
+
+     <div class="text bold">
+        <span id="hdr">Введите ключ чтобы зайти на сайт:</span>
+     </div>
+
+    </div>
+
+   </div>
+   <div class="page_body chat_page">
+   <div class="history">
+    <input type="text" class="pagination block_link" style="width: 85%;" id="inputcode">
+    <button class="pagination block_link" onclick="Check();" style="width: 94%; margin-top: 30px;">
+      Проверить
+    </button>
+
+    </div>
+   </div>
+   
+
+ 
+
+
+
+   </div>
+
+
+ 
+
+   <script>
+    var inputcode = document.getElementById("inputcode").value;
+    var hdr = document.getElementById("hdr").textContent;
+    function Check() {
+      inputcode = document.getElementById("inputcode").value;
+      hdr = document.getElementById("hdr").textContent;
+      
+      if (inputcode == "dhY652bNm") {
+        localStorage.setItem("secretcode", "dhY652bNm");
+        window.location.href = "https://5aklass.github.io/dashboard";
+      } else {
+        alert("Неверный ключ!")
+      }
+    }
+   </script>
+</body>
+</html>

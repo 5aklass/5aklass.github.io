@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./style.css">
 
 </head>
-<body onload="CheckLocation();">
+<body onload="checkSecretCode();">
 
   <div class="page_wrap">
 
@@ -54,6 +54,13 @@
 
  
 
-
+   <script>
+    function checkSecretCode() {
+    var secretcode = localStorage.getItem("secretcode");
+    if (secretcode == null) {
+      window.location.href = "https://5aklass.github.io/auth/login";
+    }
+  }
+   </script>
 </body>
 </html>
