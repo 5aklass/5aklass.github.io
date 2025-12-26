@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+<title>Скачать учебники</title>
+  <meta content="width=device-width" name="viewport">
+
+  <link href="../src/css/tg2/style.css" rel="stylesheet">
+
+  <script src="../src/js/tg2/script.js" type="text/javascript">
+
+  </script>
+
+ </head>
+<body onload="checkSecretCode();">
+
+  <div class="page_wrap">
+
+   <div class="page_header">
+
+
+    <div class="content">
+
+     <div class="text bold">
+        Скачать учебники
+     </div>
+
+    </div>
+
+   </div>
+   <div class="page_body chat_page">
+   <div class="history">
+    <h2>Выберите учебник :</h2>
+    <h1>ВНИМАНИЕ!</h1>
+    <h4>Мне не удалось найти учебники по географии, истории и по труду для девочек <a href="../src/pdf/schoolbooks/мальч_1_технология_5_класс.pdf" download>(для мальчиков есть)</a></h4>
+    <a class="pagination block_link" href="../src/pdf/schoolbooks/математика_5_класс.pdf" download>
+Математика
+     </a>
+         <a class="pagination block_link" href="../src/pdf/schoolbooks/1_часть_русский_язык_5_класс.pdf" download>
+Русский язык 1 часть
+     </a>
+         <a class="pagination block_link" href="../src/pdf/schoolbooks/2_часть_русский_язык_5_ класс.pdf" download>
+Русский язык 2 часть
+     </a>
+         <a class="pagination block_link" href="../src/pdf/schoolbooks/1_часть_литература_5_класс.pdf" download>
+Литературное чтение 1 часть
+     </a>
+         <a class="pagination block_link" href="../src/pdf/schoolbooks/2_часть_литература_5_класс.pdf" download>
+Литературное чтение 2 часть
+     </a>
+         <a class="pagination block_link" href="../src/pdf/schoolbooks/1_часть_английский_5_класс.pdf" download>
+Английский язык 1 часть
+     </a>
+         <a class="pagination block_link" href="../src/pdf/schoolbooks/2_часть_английский_5_класс.pdf" download>
+Английский язык 2 часть
+     </a>
+         <a class="pagination block_link" href="../src/pdf/schoolbooks/наверное_биология.pdf" download>
+Биология <em>(навернае)</em>
+     </a>
+         <a class="pagination block_link" href="../src/pdf/schoolbooks/мальч_1_технология_5_класс.pdf" download>
+Труд <strong>(для мальчиков)</strong>
+     </a>
+          </a>
+    </div>
+   </div>
+   
+
+ 
+
+
+
+   </div>
+
+
+ 
+
+<script>
+    function checkSecretCode() {
+    var secretcode = localStorage.getItem("secretcode");
+    if (secretcode == null) {
+      window.location.href = "https://5aklass.github.io/auth/login";
+    }
+  }
+   </script>
+</body>
+</html>

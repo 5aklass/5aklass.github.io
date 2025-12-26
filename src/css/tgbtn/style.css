@@ -1,0 +1,17 @@
+.pagination {
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+}
+a.block_link:hover {
+    background-color: #323a45; /* groupCallMembersBgOver */
+}
+a.block_link {
+    display: block;
+    text-decoration: none !important;
+    border-radius: 4px;
+}
+a.block_link:hover {
+    text-decoration: none !important;
+    background-color: #f5f7f8;
+}
