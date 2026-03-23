@@ -13,7 +13,7 @@
   </script>
 
  </head>
-<body onload="checkSecretCode();">
+<body onload="/*checkSecretCode();*/"       >
 
   <div class="page_wrap">
 
@@ -30,10 +30,10 @@
 
    </div>
    <div class="page_body chat_page">
-   <div class="history">
+   <div class="history customfnt">
     <h2>Выберите учебник :</h2>
     <h1>ВНИМАНИЕ!</h1>
-    <h4>Мне не удалось найти учебники по географии, истории и по труду для девочек <a href="../src/pdf/schoolbooks/мальч_1_технология_5_класс.pdf" download>(для мальчиков есть)</a></h4>
+    <h3>Мне не удалось найти учебники по географии, истории и по труду для девочек <a href="../src/pdf/schoolbooks/мальч_1_технология_5_класс.pdf" download>(для мальчиков есть)</a></h4>
     <a class="pagination block_link" href="../src/pdf/schoolbooks/математика_5_класс.pdf" download>
 Математика
      </a>
@@ -76,12 +76,12 @@
  
 
 <script>
-    function checkSecretCode() {
-    var secretcode = localStorage.getItem("secretcode");
-    if (secretcode == null) {
-      window.location.href = "https://5aklass.github.io/auth/login";
-    }
-  }
-   </script>
+//    function checkSecretCode() {
+//    var secretcode = localStorage.getItem("secretcode");
+//    if (secretcode == null) {
+//      window.location.href = "https://5aklass.github.io/auth/login";
+//    }
+//  }
+//   </script>
 </body>
 </html>
